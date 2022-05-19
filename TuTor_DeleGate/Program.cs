@@ -28,7 +28,7 @@ namespace TuTor_DeleGate
             ////bây giờ cần mutilcast 2 delegate lại với nhau 
             //NormalDelegateMutilcast normal1 = new NormalDelegateMutilcast(program.Printer);
             //normal1("Thuyên Yêu");
-
+            //
             //NormalDelegateMutilcast normal2 = new NormalDelegateMutilcast(program.Printer2);
             //normal2("Ngân");
             ////dây gọi là gộp 2 delegate lại như kiểu cộng 2 biên
