@@ -14,6 +14,7 @@ namespace Tana_TestExam
             System.Console.WriteLine("4.Xóa lap Theo A hoặc a");
             System.Console.WriteLine("5.Ghi File");
             System.Console.WriteLine("6.Đọc");
+            System.Console.WriteLine("6.Xóa");
             System.Console.WriteLine("0.Thoát");
             System.Console.WriteLine("Mời Bạn Chọn Chương Trình");
             _inpuValues = Console.ReadLine();
@@ -40,6 +41,9 @@ namespace Tana_TestExam
                     break;
                 case 6:
                     DocFile();
+                    break;
+                case 7:
+                    //RemoveDeoCanLinq();
                     break;
                 default:
                     Console.WriteLine("☆*: .｡. o(≧▽≦)o .｡.:*☆");

@@ -24,6 +24,8 @@ namespace Tana_TestExam
             _lstLap = new List<Laptop>();
 
         }
+
+        //public , private, protected, internal....
         public void AddLapTop()
         {
             //khởi tạo 1 cái delegate 
@@ -56,10 +58,41 @@ namespace Tana_TestExam
             //hàm này được thực thi khi và chỉ khi input khác n
             ShowMenu();
         }
+
+
         public string LoiChao(string mess)
         {
             Console.WriteLine($"Mời Bạn Nhập{mess}");
             return Console.ReadLine();
+        }
+        public int Kkaka(string mess)
+        {
+            Console.WriteLine($"Mời Bạn Nhập{mess}");
+            return Convert.ToInt32(Console.ReadLine());
+        }
+        public string DangKi(string tk, string mk)
+        {
+            //hajaskkaska
+            string mess = "";
+            if (tk == "thuyen" && mk == "abac")
+            {
+
+                return "Đăng nhập thành công";
+
+            }
+            else
+            {
+
+                return "Đăng nhập thành thất bại";
+
+            }
+            return "Đăng kí thành công";
+        }
+
+        public void Laymess()
+        {
+            string getmess = DangKi("thuyen", "abac1");
+            Console.WriteLine(getmess);
         }
         public bool CheckMa(string malap)
         {
@@ -131,7 +164,9 @@ namespace Tana_TestExam
             //đếm ra số lượng phần từ đã xóa
             int counter = counter = _lstLap.RemoveAll(c => c.Ten.StartsWith("A") || c.Ten.StartsWith("a")); ;
             Console.WriteLine("đây là chức năng xóa tên bắt đầu bằng A hoặc a");
-            foreach (Laptop x in _lstLap.Where(c => c.Ten.StartsWith("A") || c.Ten.StartsWith("a")).ToList())
+
+
+            foreach (Laptop x in _lstLap.Where(c => c.MaLapTop == 1))
             {
 
                 _lstLap.Remove(x);
@@ -144,6 +179,7 @@ namespace Tana_TestExam
         public List<T> lstGenneric<T>()
         {
             List<T> lstT = new List<T>();
+
             //khai báo ra 1 list genneric để chút gán;
             return lstT;
         }

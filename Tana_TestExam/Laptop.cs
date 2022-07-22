@@ -29,5 +29,10 @@ namespace Tana_TestExam
         {
             System.Console.WriteLine("Mã LapTop Là: {0}, Tên LapTop Là: {1},Trọng Lượng LapTop Là: {2},DanhGia LapTop Là: {3}", MaLapTop, Ten, TrongLuong > 2 ? "Nặng" : "Nhẹ", DanhGia);
         }
+
+        internal static object Tolist()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
