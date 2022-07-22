@@ -15,9 +15,7 @@ namespace ChuaDeThiThu
         {
             funcer = loichao;
             funcer("thuyen");
-            funcer("thuyen");
-            funcer("thuyen");
-            funcer("thuyen");
+
 
         }
 
